@@ -11,7 +11,7 @@ const Home = () => {
   const [filterbollywood, setFilterbollywood] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:9000/api/category/bollywood")
+    axios.get("https://projectbakendsprojectapi.onrender.com/api/category/bollywood")
         .then((res)=>{console.log(res.data)
           setBollywood(res.data)})
   }, []);
@@ -28,7 +28,7 @@ const Home = () => {
   const [filterfood, setFilterFood] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:9000/api/category/food")
+    axios.get("https://projectbakendsprojectapi.onrender.com/api/category/food")
         .then((res)=>{console.log(res.data)
           setFood(res.data)})
   }, []);
@@ -46,7 +46,7 @@ const Home = () => {
   const [filterData2, setFilterData2] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:9000/api/category/fitness")
+    axios.get("https://projectbakendsprojectapi.onrender.com/api/category/fitness")
         .then((res)=>{console.log(res.data)
           setData2(res.data)})
   }, []);

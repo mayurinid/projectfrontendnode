@@ -8,7 +8,7 @@ import axios from 'axios';
 const Technology = () => {
     const [technology,setTechnology]=useState("")
     useEffect(()=>{
-        axios.get("http://localhost:9000/api/category/technology")
+        axios.get("https://projectbakendsprojectapi.onrender.com/api/category/technology")
         .then((res)=>{console.log(res.data)
             setTechnology(res.data)}) 
     },[])

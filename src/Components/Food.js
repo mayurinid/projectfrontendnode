@@ -7,7 +7,7 @@ import axios from 'axios'
 const Food = () => {
     const [food,setFood]=useState("")
     useEffect(()=>{
-        axios.get("http://localhost:9000/api/category/food")
+        axios.get("https://projectbakendsprojectapi.onrender.com/api/category/food")
         .then((res)=>{console.log(res.data)
             setFood(res.data)})
     },[])

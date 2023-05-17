@@ -6,7 +6,7 @@ import axios from 'axios';
 const Hollywood = () => {
     const [hollywood,setHollywood]=useState("")
     useEffect(()=>{
-        axios.get("http://localhost:9000/api/category/hollywood")
+        axios.get("https://projectbakendsprojectapi.onrender.com/api/category/hollywood")
         .then((res)=>{console.log(res.data)
             setHollywood(res.data)})
     },[])

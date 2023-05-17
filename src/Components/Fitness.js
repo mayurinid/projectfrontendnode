@@ -6,7 +6,7 @@ import axios from 'axios';
 const Fitness = () => {
     const [fitness,setFitness]=useState("")
     useEffect(()=>{
-        axios.get("http://localhost:9000/api/category/fitness")
+        axios.get("https://projectbakendsprojectapi.onrender.com/api/category/fitness")
         .then((res)=>{console.log(res.data)
             setFitness(res.data)})
     },[])

@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 const Bollywood = () => {
     const [bollywood,setBollywood]=useState("")
     useEffect(()=>{
-        axios.get("http://localhost:9000/api/category/bollywood")
+        axios.get("https://projectbakendsprojectapi.onrender.com/api/category/bollywood")
         .then((res)=>{console.log(res.data)
             setBollywood(res.data)})
     },[])
